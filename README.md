@@ -8,7 +8,7 @@ The main() method starts by parsing out the command line arguments.It then sets 
 the TCP protocol by creating a socket, binding it and listening to it. 
 An accept() call is called in an infinite-loop which awaits incoming requests. 
 An incoming request is duplicated into a different socket to keep the main socket available for more 
-connections, and the HTTP transaction is dispatched into a new thread-pool
+connections, and the HTTP transaction is dispatched into a new thread-pool  
 Support static and dynamic languages, but dynamic languages parsing have not finished
 
 
@@ -46,9 +46,9 @@ A name for the server
 #### Version 
 version http1.1
 
-### get
+### Get
 provide get method , you can visit as this: http://127.0.0.1:8088/files/index.html?t=11
-### post
+### Post
 provide post method, cur -d "v=1" http://127.0.0.1:8088/files/index.jsp
 
 ### Serving Files
@@ -60,9 +60,9 @@ client as a response.
 ## Special Note
 As our teacher said #java is :shit:#, This is my first time to write code by C,
 So I have to admit I quote some other people´s code
-which thread pool is provide by nayefc and memmory is provide by pintos
+which thread pool is provide by nayefc and memmory is provide by pintos 
 
-##Reference
+##Reference 
 https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html  
 https://github.com/nayefc/web-server  
 http://blog.chinaunix.net/uid-27164517-id-3364985.html  
