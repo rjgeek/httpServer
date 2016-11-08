@@ -40,6 +40,7 @@ struct thread_pool {
 /* Create a new thread pool with n threads. */
 struct thread_pool *thread_pool_new(int nthreads) {
 	
+	printf("create thread pool, the length is  %d\n",nthreads);
     struct thread_pool *pool = (struct thread_pool *) malloc(sizeof(struct thread_pool));
 	
     list_init(&pool->thread_list);
@@ -97,6 +98,7 @@ static void *threadpool_func (void *threadpool) {
 
 struct future * thread_pool_submit(struct thread_pool *pool, thread_pool_callable_func_t callable, void * callable_data) {
 
+	printf("create a new thread\n\n");
     // adding new future
     
     // pool or callable null

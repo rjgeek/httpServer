@@ -1,3 +1,16 @@
 http://127.0.0.1:8088
 http://127.0.0.1:8088/files/hello.html
 http://127.0.0.1:8088/files.test.txt
+http://127.0.0.1:8088/files/test.xml
+http://127.0.0.1:8088/files/test.jpg
+http://127.0.0.1:8088/files/test.jpg
+http://127.0.0.1:8088/files/test.gif
+http://127.0.0.1:8088/files/jquery.min.js
+http://127.0.0.1:8088/files/test.json
+
+http://127.0.0.1:8088/files/hello.html?parm=1
+http://127.0.0.1:8088/files/hello.jsp?parm=2
+http://127.0.0.1:8088/files/hello.php?parm=3
+http://127.0.0.1:8088/files/hello.aspx?parm=4
+
+

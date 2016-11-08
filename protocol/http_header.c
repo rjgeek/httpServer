@@ -43,11 +43,11 @@ void get_content_type(char *filename, char *filetype)
     if (strstr(filename, ".html")){
     	strcpy(filetype, "text/html");
     }else if (strstr(filename, ".js")){
-    	strcpy(filetype, "text/javascript");
+    	strcpy(filetype, "text/javascript;charset=utf-8");
     }else if (strstr(filename, ".xml")){
-    	strcpy(filetype, "text/xml");
+    	strcpy(filetype, "text/xml;charset=utf-8");
     }else if (strstr(filename, ".json")){
-    	strcpy(filetype, "text/json");
+    	strcpy(filetype, "text/json;charset=utf-8");
     }else if (strstr(filename, ".gif")){
     	strcpy(filetype, "image/gif");
     }else if (strstr(filename, ".png")){
@@ -57,6 +57,6 @@ void get_content_type(char *filename, char *filetype)
     }else if (strstr(filename, ".css")){
     	strcpy(filetype, "text/css");
     }else{
-    	strcpy(filetype, "text/plain");
+    	strcpy(filetype, "text/plain;charset=utf-8");
     }
 }

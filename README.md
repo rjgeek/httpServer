@@ -36,14 +36,18 @@ you can see it from response header
 type:text/html,text/javascript,text/json,image/gif,image/png,image/jpeg,text/css,text/plain
 #### Date
 you can get server current time
+#### Expires
+you can get file Expires time
+#### Pragma
+Implementation-specific fields that may have various effects anywhere along the request-response chain.
 #### Server
-you can get the server name
+A name for the server
 #### Version 
 version http1.1
 ### get
 provide get method , you can visit as this: http://127.0.0.1:8088/files/index.html?t=11
 ### post
-provide post method, you can visit as this: http://127.0.0.1:8088/files/index.html?t=11
+provide post method, cur -d "v=1" http://127.0.0.1:8088/files/index.jsp
 
 ### Serving Files
 To support serving files, our server takes an -R argument which determines the path to the root directory 
