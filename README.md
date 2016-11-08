@@ -9,20 +9,21 @@ the TCP protocol by creating a socket, binding it and listening to it.
 An accept() call is called in an infinite-loop which awaits incoming requests. 
 An incoming request is duplicated into a different socket to keep the main socket available for more 
 connections, and the HTTP transaction is dispatched into a new thread-pool
+Support static and dynamic languages, but dynamic languages parsing have not finished
+
 
 # Usage
 
 ## Make,Run,Test
-To build, invoke:
 
     $./script.sh
     
 ## Functionality
 
 ### Provide arguments when start
--h prints help
--p port to accept HTTP client requests (required)
--f path that specifies the root directory for serving files
+-h prints help   
+-p port to accept HTTP client requests (required)  
+-f path that specifies the root directory for serving files  
 
 ### Multiple Threaded Support
 To support multiple clients, each request is dispatched in a new thread while the main thread is awaiting new 
@@ -44,6 +45,7 @@ Implementation-specific fields that may have various effects anywhere along the 
 A name for the server
 #### Version 
 version http1.1
+
 ### get
 provide get method , you can visit as this: http://127.0.0.1:8088/files/index.html?t=11
 ### post
@@ -56,15 +58,14 @@ to avoid serving other files on the server. If the path given is a valid path, t
 client as a response.
 
 ## Special Note
-
 As our teacher said #java is :shit:#, This is my first time to write code by C,
 So I have to admit I quote some other people´s code
 which thread pool is provide by nayefc and memmory is provide by pintos
 
 ##Reference
-https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html
-https://github.com/nayefc/web-server
-http://blog.chinaunix.net/uid-27164517-id-3364985.html
+https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html  
+https://github.com/nayefc/web-server  
+http://blog.chinaunix.net/uid-27164517-id-3364985.html  
 
 
 
